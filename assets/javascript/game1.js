@@ -58,7 +58,7 @@ function Hangman() {
 	}
 }
 
-//Check guesses
+//Check guesses use prototype found with looking up this. method
 
 Hangman.prototype.checkGuess = function(char) {
 	this.guessedLetters.push(char);
