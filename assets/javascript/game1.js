@@ -1,23 +1,23 @@
 // Variables
 
-var wordDisplayLettersElement = document.getElementById("word-display-letters");
+var lettersDisplayElement = document.getElementById("lettersDisplay");
 var guessedLettersElement = document.getElementById("guessed-letters");
 var errorCountElement = document.getElementById("error-count");
 var winCountElement = document.getElementById("win-count");
 var lossCountElement = document.getElementById("loss-count");
 var alertElement = document.getElementById("alerts");
-var lostElement = document.getElementById("lost");
+var lostElement = document.getElementById("lost"); //I was not able to get this part workign like I wanted it to
 
 var wins = 0;
 var losses = 0;
 var maxErrors = 9;
 var validGuesses = [ 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' ];
-var youWin = "You Win!!!";
-var youLose = "Failure!";
+var youWin = "You Win!!!"; //I was not able to get this working like I wanted it to.
+var youLose = "Failure!"; // I was not able to get this workign like I wanted it to.
 var emptyAlert = "";
 
 
-// Pressing keyboard letters and new game setup
+// key event function and new game setup
 var game = new Hangman();
 
 document.onkeyup = function(event) {
@@ -96,7 +96,7 @@ Hangman.prototype.updatePageData = function() {
 		tempString += ((this.visibleLetters[i] || this.gameOver) ? this.word.charAt(i).toUpperCase() : "_");
 		if (i < (this.visibleLetters.length - 1)) tempString += " ";
 	}
-	wordDisplayLettersElement.textContent = tempString;
+	lettersDisplayElement.textContent = tempString;
 
 	tempString = "";
 	for (var i = 0; i < this.guessedLetters.length; i++) {
