@@ -1,4 +1,8 @@
 # WordGuessGame
+
+“I am making my contributions/ submissions to this project solely in my personal capacity and am not conveying any rights to any intellectual property of any third parties.”
+
+
 Who's That Pokemon?!
 
 This word guessing game is kind of like Hangman but pokemon style and no hanging man!
